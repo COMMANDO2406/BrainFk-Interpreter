@@ -3,7 +3,7 @@ body, h1, h2, p, ul, li {
     padding: 0;
 }
 
-/* Style the header */
+/* header */
 header {
     background-color: #333;
     color: #fff;
@@ -11,7 +11,7 @@ header {
     padding: 20px;
 }
 
-/* Style the navigation menu */
+/* navigation menu */
 nav ul {
     background-color: #444;
     list-style: none;
@@ -29,12 +29,12 @@ nav a {
     font-weight: bold;
 }
 
-/* Style sections */
+/* sections */
 section {
     padding: 20px;
 }
 
-/* Style the footer */
+/* footer */
 footer {
     background-color: #333;
     color: #fff;

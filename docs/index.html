@@ -31,8 +31,47 @@
     </section>
 
     <section id="language">
-        <h2>Language Overview</h2>
-        <!-- Add a detailed overview of the Brainf language here -->
+
+        <h2>Brainf**k Language Overview</h2>
+    <p>
+        Brainf**k, often abbreviated as BF, is an esoteric programming language created in 1993 by Urban Müller.
+        It is renowned for its minimalistic design and extreme simplicity, using a limited set of commands
+        to manipulate memory cells. Brainf**k is Turing complete, meaning it can theoretically perform any
+        computation, albeit with substantial verbosity and difficulty.
+    </p>
+    
+    <h3>Key Features:</h3>
+    <ul>
+        <li>Memory Cells: Brainf**k operates on an array of memory cells, typically 30,000, each initially set to zero.</li>
+        <li>Commands: Brainf**k uses only eight commands, including >, <, +, -, [, ], ., and ,.</li>
+        <li> >  : Move the memory pointer to the right. </li>
+        <li> <  : Move the memory pointer to the left.</li>
+        <li> +  : Increment the value at the current memory cell.</li>
+        <li> -  : Decrement the value at the current memory cell.</li>
+        <li> [  : Jump forward to the command after the matching ] if the value at the current memory cell is zero.</li>
+        <li> ]  : Jump back to the command after the matching [ if the value at the current memory cell is not zero.</li>
+        <li> .  : Output the ASCII value of the current memory cell as a character.</li>
+        <li> ,  : Input a character and store its ASCII value in the current memory cell.</li>
+    
+        <li>Looping: The [ and ] commands allow for looping, creating conditional control flow.</li>
+        <li>Input and Output: Brainf**k can read and write data using , (input) and . (output) commands.</li>
+        <li>Memory Wrapping: Memory cells in Brainf**k wrap around, making arithmetic operations interesting.</li>
+    </ul>
+    
+    <h3>External Resources:</h3>
+    <ul>
+        <li>
+            <a href="https://en.wikipedia.org/wiki/Brainfuck" target="_blank" rel="noopener noreferrer">
+                Brainf**k on Wikipedia
+            </a>: Wikipedia provides a detailed overview of Brainf**k's history, commands, and usage.
+        </li>
+        <li>
+            <a href="https://esolangs.org/wiki/Brainfuck" target="_blank" rel="noopener noreferrer">
+                The Brainf**k Programming Language
+            </a>: The Esolangs Wiki is a comprehensive resource for esoteric programming languages, including Brainf**k.
+        </li>
+    </ul>
+
     </section>
 
     <section id="interpreter">
