@@ -1,3 +1,8 @@
+# to do: 
+# [] Add better warnings, error handling
+# [] Need to add better error handling preferably coloured
+# [] Test efficiency
+
 import sys
 
 """ Usage windows--> python interpreter.py {filename.bf}"""
@@ -86,8 +91,11 @@ def main():
             program = fil.read()
             execute(program)
     except FileNotFoundError:
+        # basic file not found error
         print(f"File: {filename} not found in cwd.")
+
     except Exception as e:
+        # basic exception occured
         print(f"Error raised: {str(e)}")
 
 if __name__ == "__main__":
