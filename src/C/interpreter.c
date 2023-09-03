@@ -86,7 +86,7 @@ void execute_brainfuck_program(const char* program) {
 
 int main() {
     char program[10000]; // Adjust the size as needed
-    printf("Enter Brainfuck code: ");
+    printf("Enter Brainf*** code: "); // Added censorship
     fgets(program, sizeof(program), stdin);
 
     execute_brainfuck_program(program);
