@@ -5,18 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>BrainFlip Interpreter</title>
+    <title>BrainFlip Interpreter & Online Interpreter</title>
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bai+Jamjuree:ital,wght@1,700&display=swap" rel="stylesheet">
   </head>
 
   <body>
     
     <header>
-        <h1>Brainf**k Documentation</h1>
+        <h1>Brainf**k Documentation & Online Interpreter</h1>
     </header>
 
     <nav>
         <ul>
+            <!-- #I think this is unnecessary instead we should have a link to the interpreter and github page, will change when I have time -->
             <li><a href="#introduction">Introduction</a></li>
             <li><a href="#language">Language Overview</a></li>
             <li><a href="#interpreter">Interpreter</a></li>
@@ -30,7 +35,7 @@
         <p>Brainf**k is an esoteric programming language known for its minimalistic design. It uses a small set of commands to manipulate memory cells and create programs.</p>
     </section>
 
-    <section id="language">
+    <section id="language"> <!--This looks terrible-->
 
         <h2>Brainf**k Language Overview</h2>
     <p>
@@ -44,14 +49,14 @@
     <ul>
         <li>Memory Cells: Brainf**k operates on an array of memory cells, typically 30,000, each initially set to zero.</li>
         <li>Commands: Brainf**k uses only eight commands, including >, <, +, -, [, ], ., and ,.</li>
-        <li> >  : Move the memory pointer to the right. </li>
-        <li> <  : Move the memory pointer to the left.</li>
-        <li> +  : Increment the value at the current memory cell.</li>
-        <li> -  : Decrement the value at the current memory cell.</li>
-        <li> [  : Jump forward to the command after the matching ] if the value at the current memory cell is zero.</li>
-        <li> ]  : Jump back to the command after the matching [ if the value at the current memory cell is not zero.</li>
-        <li> .  : Output the ASCII value of the current memory cell as a character.</li>
-        <li> ,  : Input a character and store its ASCII value in the current memory cell.</li>
+        <li> '>'  Move the memory pointer to the right. </li>
+        <li> '<'  Move the memory pointer to the left.</li>
+        <li> '+'  Increment the value at the current memory cell.</li>
+        <li> '-'  Decrement the value at the current memory cell.</li>
+        <li> '['  Jump forward to the command after the matching ] if the value at the current memory cell is zero.</li>
+        <li> ']'  Jump back to the command after the matching [ if the value at the current memory cell is not zero.</li>
+        <li> '.'  Output the ASCII value of the current memory cell as a character.</li>
+        <li> ','  Input a character and store its ASCII value in the current memory cell.</li>
     
         <li>Looping: The [ and ] commands allow for looping, creating conditional control flow.</li>
         <li>Input and Output: Brainf**k can read and write data using , (input) and . (output) commands.</li>
@@ -76,7 +81,7 @@
 
     <section id="interpreter">
         <h2>Interpreter</h2>
-        <!-- Provide information about the Brainf interpreter, how it works, and how to run Brainf programs -->
+        <li> <a href="/docs/onlineinterpreter/interpreter.html#" target="_blank" rel="noopener noreferrer"> Use the Online Interpreter </a></li> 
     </section>
 
     <section id="examples">
@@ -90,10 +95,8 @@
     </section>
 
     <footer>
-        <p>&copy; 2023 Raghav Sethi (COMMANDO2406)</p>
+        <p>&copy; 2023 Raghav Sethi (<a href="https://github.com/COMMANDO2406/" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: aliceblue;">COMMANDO2406</a>)</p>
     </footer>
-
-    <script src="app.js"></script>
 
   </body>
 
